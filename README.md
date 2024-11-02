@@ -7,6 +7,32 @@ Bem-vindo à documentação da API de restaurantes e usuários! Abaixo você enc
 ## 📌 Visão Geral
 
 ### **Base URL**: `http://localhost:5000`
+# API - Configuração de Credenciais
+
+## Credenciais
+
+As credenciais necessárias para o uso desta API serão enviadas através do Microsoft Teams. Após recebê-las, siga os passos abaixo para configurar corretamente o acesso:
+
+1. **Inclua o arquivo JSON das credenciais**:
+   Coloque o arquivo JSON das credenciais dentro da pasta principal da API.
+
+2. **Modifique o código nos arquivos `index.js`, `restaurants.js` e `users.js`**:
+   Atualize o caminho do arquivo de credenciais nesses arquivos conforme descrito a seguir:
+
+   - Substitua a linha:
+     ```javascript
+     const serviceAccount = require('./CREDENCIAL');
+     ```
+
+   - Por:
+     ```javascript
+     const serviceAccount = require('./CAMINHO_DO_ARQUIVO_JSON');
+     ```
+
+   Onde `CAMINHO_DO_ARQUIVO_JSON` deve ser substituído pelo caminho exato do arquivo JSON de credenciais.
+
+   > **Nota**: Certifique-se de que o caminho esteja correto para evitar erros de autenticação ao iniciar a API.
+
 
 
 ---
