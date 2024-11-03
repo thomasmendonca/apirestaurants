@@ -1,7 +1,7 @@
 // Arquivo: restaurants.js
 
 const admin = require('firebase-admin');
-const serviceAccount = require('./CREDENCIAL');
+const serviceAccount = require('./apirestaurants-4f53b-firebase-adminsdk-iv5l4-512933d7e5.json');
 
 // Inicializa o Firebase
 admin.initializeApp({
